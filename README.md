@@ -1,6 +1,8 @@
 # ASD-Coin-Writeup
 My Writeup of the ASD Coin Cipher Challenge Thingo
 
+###Note: formatting of this is really bad since its a direct copy and paste of my notes doc that I've been using - will format it nicely later.
+
 Inner:
     BGOAMVOEIATSIRLNGTTNEOGRERGXNTEAIFCECAIEOALEKFNR5LWEFCHDEEAEEE7NMDRXX5
     bGOAMVoeIaTSirlNGTtNEoGRERgxntEAIfCecaIEoALekFNr5LweFCHDEeaEEe7NmdRXx5
