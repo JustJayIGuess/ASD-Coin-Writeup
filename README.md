@@ -1,8 +1,6 @@
 # ASD-Coin-Writeup
 My Writeup of the ASD Coin Cipher Challenge Thingo
 
-### Note: formatting of this is really bad since its a direct copy and paste of my notes doc that I've been using - will format it nicely later.
-
 I started by just running the strings of text through quipqiup, but that wasn't really getting anywhere.
 Then I tried the same thing, but only with bolded letters/unbolded letters, but that wasn't really getting me anywhere either.
 Eventually I just put the strings into a multi-cipher thingo that just checks a bunch of common ciphers, and found that Atbash worked.
