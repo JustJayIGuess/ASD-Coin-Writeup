@@ -9,8 +9,8 @@ Eventually I just put the strings into a multi-cipher thingo that just checks a 
 I'd never heard of this cipher before, but it looks like its similar to a caeser cipher but with the letters reversed instead of shifted.
 This gave:
 ```
-WEAREAUDACIOUSINCONCEPTANDMETICULOUSINEXECUTION.FINDCLARITYIN7WIDTHX5DEPTH
-WE ARE AUDACIOUS IN CONCEPT AND METICULOUS IN EXECUTION. FIND CLARITY IN 7 WIDTH X 5 DEPTH
+=> WEAREAUDACIOUSINCONCEPTANDMETICULOUSINEXECUTION.FINDCLARITYIN7WIDTHX5DEPTH
+=> WE ARE AUDACIOUS IN CONCEPT AND METICULOUS IN EXECUTION. FIND CLARITY IN 7 WIDTH X 5 DEPTH
 ```
 
 I'm not going to lie, I got stuck here for a but longer than I probably should have.
@@ -25,8 +25,8 @@ Being a programmer, I ended up spending 10 minutes trying to remember how to use
 
 After a few typos, this eventually output:
 ```
-BELONGINGTOAGREATTEAMSTRIVINGFOREXCELLENCEWEMAKEADIFFERENCEXORHEXA5D75
-BELONGING TO A GREAT TEAM STRIVING FOR EXCELLENCE WE MAKE A DIFFERENCE XOR HEX A5D75
+=> BELONGINGTOAGREATTEAMSTRIVINGFOREXCELLENCEWEMAKEADIFFERENCEXORHEXA5D75
+=> BELONGING TO A GREAT TEAM STRIVING FOR EXCELLENCE WE MAKE A DIFFERENCE XOR HEX A5D75
 ```
 
 Finally, something I'm familiar with!
@@ -70,7 +70,7 @@ After this, I spent hours trying different combinations of treating full bold le
 Have I finally got it!?
 
 ```
-RIECBSCCIILFBEI
+=> RIECBSCCIILFBEI
 ```
 
 Nope.
@@ -78,8 +78,22 @@ I ended up trying a bunch of different monoalphabetic ciphers on the mysterious 
 
 Eventually I went back to the 1's and 0's and started to try that again.
 
-I ended up making a plaintext doc with all of the binary string I could derive from the letter rings, along with bit flipped version of them, then started to CTRL+F for binary letters in them. Initially, I hadn't really tried to hard with decoding the strings as ascii, since they were all either 70 or 75 characters long, which isn't a multiple of 8 (8 bits in a byte). After actually looking at an ascii chart, though, I realised that most of the 
+I ended up making a plaintext doc with all of the binary string I could derive from the letter rings, along with bit flipped version of them, then started to CTRL+F for binary letters in them. Initially, I hadn't really tried to hard with decoding the strings as ascii, since they were all either 70 or 75 characters long, which isn't a multiple of 8 (8 bits in a byte). After actually looking at an ascii chart, though, I realised that most of the codes started with a 0. After a bit of research, I found out that the original ascii seemed to be based off 7 bit bytes anyway. 7 divides the 70 characters in the inner wheel, so i split it up into 7 bit bytes and tried the string with bolded letters as 1's and regular letters as 0's, along with it's bitflipped version, in dcode.fr:
 
+```
+1000001101001110001001000011110001011100100110010011000001100100110010
+=> ASDCbr2022
+```
+
+Very reminiscent of CTFs. ASD should absolutely run a CTF.
+
+I actually realised afterwards that dcode.fr automatically tries both 8bit and 7bit binary, so I would've found this sooner if I'd just tried the binary strings in dcode.fr originally.
+
+
+Anyway, this now only leaves the outer ring.
+
+
+I started off doing the same as what I had done for the previous layer - try heaps of different obscure ciphers and weird things.
 ```
 
     BGOAMVOEIATSIRLNGTTNEOGRERGXNTEAIFCECAIEOALEKFNR5LWEFCHDEEAEEE7NMDRXX5
