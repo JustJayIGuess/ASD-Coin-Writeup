@@ -133,6 +133,8 @@ Finally I plugged this into dcode.fr:
 
 Bingo!
 
+I looked it up, and DSB here refers to the Defence Signals Bureau, which was established at Albert Park in 1947.
+
 ## Takeaway
 This was super fun, and I learned a lot more than I would have if I'd just spent this time doing maths homework (though specialist maths problems are certainly a fun challenge sometimes). After doing all this, I've found out that a bunch of other tools exist out there, like cyberchef. Also got a much better intuition for different types of ciphers, such as that ciphers containing lots of V's and G's are probably Atbash, and ascii isn't necessarily just a bunch of bytes.
 Overall, a very fun experience, and I hope that ASD continues to do puzzles like this.
